@@ -582,6 +582,9 @@ footer .copyright {padding-top: 16px;}
 		height: 100px;
 		margin: 10px;
 	}
+	.means-structure ul {
+		width: 700px;
+	}
 	.means-structure ul li {
 		width: 150px;
 	}
@@ -796,24 +799,34 @@ header .header-left img {
 	ul.ft-link li{margin-right: 73px;}
 	/*cnf info css*/
  /*About the Venue*/
+ .about-venue h3 {
+	width: 65%;
+ }
     .means-structure .diamond {
       width: 80px;
       height: 80px;
       margin: 10px;
-    }
+	}
+	.means-structure ul {
+		width: 600px;
+	}
     .means-structure ul li {
       width: 116px;
     }
     .means-structure span {
       top: 40px;
       width: 100px;
-      font-size: 0.750em;
+      font-size: 0.688em;
       margin-left: 0px;
     }
     .means-structure span.multi-line-txt {
       top: 24px;
       margin-left: 0px;
-    }
+	}
+	.means-structure span.two-line-txt {
+		top: 39px;
+		margin-left: 0px;
+	}
     .row-01 {
       left: 58px;
   top: 42px;
@@ -834,8 +847,14 @@ header .header-left img {
     }
     .means-structure .big-diamond-txt {
       top: 34px;
-  margin-left: 13px;
-    }
+  margin-left: 22px;
+	}
+	.bottom-txt {
+		width: 270px;
+		position: relative;
+		font-size: 14px;
+		top: -120px;
+	}
     /*About the Venue Ends*/
 }
 @media (min-width: 0px) and (max-width: 767px){
@@ -870,8 +889,8 @@ header .header-left img {
 
 
 .means-structure.mobile .diamond {
-	width: 100px;
-height: 100px;
+	width: 140px;
+height: 140px;
 	border-radius: 10px;
 	position: relative;
 	background-color: #FFA54D;
@@ -881,6 +900,11 @@ height: 100px;
 	/* Safari 3-8 */
 	transform: none;
 	margin: 10px auto;
+}
+.diamond {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .means-structure ul li {
 	display: table-cell;
@@ -893,7 +917,7 @@ height: 100px;
 .means-structure span {
 	display: block;
 text-align: center;
-top: 47px;
+top: auto;
 position: absolute;
 width: 100px;
 z-index: 1;
@@ -904,7 +928,7 @@ font-size: 0.750em;
 }
 
 .means-structure span.multi-line-txt {
-	top: 32px;
+	/* top: 32px; */
 margin-left: 0;
 }
 
@@ -943,7 +967,7 @@ display: block;
 }
 
 .means-structure.mobile .row-06 .big-diamond {
-	width: 80%;
+	width: 300px;
   height: 100px;
   background: #fff;
   border: 2px solid #515F6A;
@@ -965,6 +989,18 @@ margin: 0 auto;
 }
 .desktop{
   display: none
+}
+.bottom-txt {
+	top: -60px;
+	width: 100%;
+}
+.means-structure.mobile .diamond.box-left{
+	float: right;
+	margin-right: 10px;
+}
+.means-structure.mobile .diamond.box-right{
+	float: left;
+	margin-left: 10px;
 }
 
 /*About the Venue Ends*/
