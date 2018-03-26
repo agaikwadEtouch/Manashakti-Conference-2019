@@ -39,7 +39,7 @@ header .container {
 }
 .date-container {
     text-align: right;
-    margin-top: 15px;
+    margin-top: 6px;
 }
 .date-info {
     background: #ffce9d;
@@ -639,7 +639,10 @@ footer .copyright {padding-top: 16px;}
 } 
 header .header-left img {
   width: 90%;
- }      
+ }
+	.association-wrapper img[alt=Apppah]{
+		margin-top: 18px;
+	}
 }
 @media (min-width: 992px){
 	.navbar-expand-lg .navbar-nav .nav-link{padding: 11px 13px 9px 13px;}
