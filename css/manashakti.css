@@ -23,9 +23,8 @@ header{
     background: -ms-linear-gradient(top, #fefef2, #f9f4ab, #fec384);
     background: -o-linear-gradient(top, #fefef2, #f9f4ab, #fec384);
 }
-header .container, nav+.container {
+header .container {
  max-width: 1024px;
-	padding: 0;
 }
 /*.header-right {
 	max-width: 440px;
@@ -101,7 +100,7 @@ header .container, nav+.container {
 	content: "";
 	border-right: 2px solid #9a9a9a;
 	position: absolute;
-	right: 2px;
+	right: 5px;
     top: 10px;
     height: 85%;
 }
@@ -195,20 +194,54 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca250b', end
 
 /*main banner css starts here*/
 .main-banner-wrapper{
-	background: url(../images/conf-info-banner.png)no-repeat;
 	text-align:center;
 	font-size: 15px;
 	font-weight: bold;
 	color: #515f6a;
-	padding-top: 9px;
-	height:321px;
+}
+.main-banner-wrapper .item1,.main-banner-wrapper .item2,.main-banner-wrapper .item3,.main-banner-wrapper .item4,.main-banner-wrapper .item5{
+	height: 321px;
+	width: 100%;
+}
+.main-banner-wrapper .item1{
+	background: url('../images/conf-info-banner.png') no-repeat;
+
+}
+.main-banner-wrapper .item2{
+	background: url('../images/rajmachi-fort.png') no-repeat;
+}
+.main-banner-wrapper .item3{
+	background: url('../images/karla-caves.png') no-repeat;
+}
+.main-banner-wrapper .item4{
+	background: url('../images/western-ghats.png') no-repeat;
+}
+.main-banner-wrapper .item5{
+	background: url('../images/bhushi-dam.png') no-repeat;
+}
+.carousel-indicators{
+	bottom: 15px;
+}
+.banner-text {
+    padding-top: 20px;
+}
+p.banner-content-text {
+	color: #fff;
+    height: 40px;
+    background: rgba(0,0,0,0.4);
+    bottom: 26px;
+    position: absolute;
+    right: 0;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: right;
+    padding: 1% 2%;
 }
 .main-ban-txt {
     font-size: 19px;
 	letter-spacing: 3px;
 	line-height: 127%;
 	font-weight: 600;
-	margin-bottom: 10px;
 }
 .normal-text{ font-weight: normal;}
 .main-ban-title {
@@ -218,6 +251,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca250b', end
 	padding-top: 9px;
 	padding-bottom: 30px;
 	letter-spacing: 2px;
+}
+/* Prev Next arrows*/
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 40px;
+  color: #ffc107;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 40px;
+  color: #ffc107;
 }
 /*main banner css ends here*/
 
@@ -395,9 +451,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca250b', end
 	.advisory-committee h2, .advisory-committee h3, .executive-committee h2, .executive-committee h3 {
 		font-weight: bold;
 	}
-	.advisory-committee h2, .executive-committee h2, .container h2 {
+	.advisory-committee h2, .executive-committee h2 {
 		font-size: 24px;
-		margin-top: 20px;
+		text-transform: uppercase;
 	}
 	.advisory-committee h3, .executive-committee h3 {
 		font-size: 18px;
@@ -413,27 +469,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca250b', end
 .mobile {
   display: none;
 }
-.hero-section {
-    background: url(../images/abt-venue.png)no-repeat;
-    text-align: center;
-    font-size: 26px;
-    font-weight: bold;
-    color: #fff;
-    padding-top: 9px;
-    height: 321px;
-    position: relative;
-  }
-  .hero-txt {
-    width: 50%;
-    float: right;
-    position: absolute;
-    bottom: 40px;
-    right: 0;
-    letter-spacing: .15em;
-    text-shadow: 2px 0 0px #515F6A;
-  }
-
-h1 {
+.about-venue h1 {
 font-size: 26px;
 font-weight: bold;
 color: #555;
@@ -588,20 +624,17 @@ footer {
     font-size: 12px;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 29px 0 19px 0;
 	font-weight: bold;
 }
 ul.ft-link{margin:0 auto;width:832px;}
 ul.ft-link li{float:left;font-size: 16px;margin-right:114px;list-style:none;}
 ul.ft-link li.last{margin-right: 0;}
-.ft-link li a {color: #fff;cursor: pointer;}
-.ft-link li a:hover {
-	text-decoration: underline;
-}
+.ft-link li a {color: #fff;text-decoration: underline;cursor: pointer;}
 .ftr-link-wrapper {
     margin-bottom: 18px;
 }
-footer .copyright {}
+footer .copyright {padding-top: 16px;}
 
 
 
@@ -753,7 +786,7 @@ button.navbar-toggler:focus {
 	width: 800px;
 }
 .advisory-committee, .executive-committee {
-	 margin:  0 auto 50px;
+	 margin:  20px auto 50px;
 	 width: 980px;
 } 
 header .header-left img {
@@ -785,6 +818,7 @@ header .header-left img {
 		top: 38%;
 	  }
   .association-col-1 {
+    min-width: 86px;
     padding-top: 10px;
 	font-size: 62%;
   }
@@ -813,7 +847,7 @@ header .header-left img {
   .date-info {
     display: block;
     text-align: center;
-    color: #3E3E3E;
+    color: #000;
     background: transparent;
   }
   .date-info::after, .date-info::before {
@@ -832,9 +866,7 @@ header .header-left img {
   }
     
 	.navbar {
-	    position: absolute;
-	    top: 0;
-	    width: 80%;
+		position: static;
 	}
 	.navbar-toggler-right {
 	    position: absolute;
@@ -843,10 +875,8 @@ header .header-left img {
 	}
 
 	.custom-toggler.navbar-toggler {
-		background: transparent;
+		background: #fff;
 	    border: none;
-	    position: fixed;
-	    right: 0;
 	}
 	.custom-toggler .navbar-toggler-icon {
 	  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(186,1,0, 0.7)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -892,7 +922,7 @@ header .header-left img {
 	  .program-details {
 		margin: 50px auto 100px;
 	}
-	.advisory-committee, .executive-committee { margin: 0 auto 50px; }
+	.advisory-committee, .executive-committee { margin: 20px auto 50px; }
 	/*cnf info css*/
 	.cnf-info-wrapper{width: 100%;}
 	/*cnf info css*/
@@ -974,6 +1004,8 @@ header .header-left img {
 		top: -120px;
 	}
     /*About the Venue Ends*/
+	.main-banner-wrapper .item1,.main-banner-wrapper .item2,.main-banner-wrapper .item3,.main-banner-wrapper .item4,.main-banner-wrapper .item5{ 
+		background-position: -22px;}
 }
 @media (min-width: 0px) and (max-width: 767px){
 	.event-details{padding: 10px 0 0 10px;}
@@ -999,13 +1031,11 @@ header .header-left img {
 	footer .copyright{padding-top: 8px;}	
 	.advisory-committee .row, .executive-committee .row { padding: 0; }
 	.advisory-committee .row .col-sm, .executive-committee .row .col-sm { margin: 15px 0; }
-
+	.carousel-indicators li{ width: 15px;}
 /*About the Venue*/
 
 
-.hero-txt {
-	width: 100%;
-}
+
 .means-structure.mobile .diamond {
 	width: 140px;
 height: 140px;
@@ -1123,6 +1153,10 @@ margin: 0 auto;
 
 /*About the Venue Ends*/
 
+	/*banner text */
+.main-ban-txt {
+    font-size: 14px;
+	}
 }
 @media (min-width: 576px) and (max-width: 979px){ 
 	.apppah-title {
@@ -1143,23 +1177,19 @@ margin: 0 auto;
 		top: 25%;
 	}
 	.apppah-title {
-	    margin-top: 13px;
-		font-size: 13px;
-		text-align: center;
+		margin-top: 5px;
 	}
 	.association-col-1::after {
 		right: 1px;
 	}
-	.association-col-1 {
-		font-size: 68%;
-	}
-	img[title=Apppah] {
-		margin-top: 15px;
-	}
-	.txt-container {
-		position: static;
-	}
-	.association-col-1 {
-		padding: 0px;
+	.main-banner-wrapper .item1,.main-banner-wrapper .item2,.main-banner-wrapper .item3,.main-banner-wrapper .item4,.main-banner-wrapper .item5 {
+    background-position: -492px;
+}
+	p.banner-content-text {
+		font-size: 11px;
+		height: 33px;
+    	line-height: 12px;
+		text-align: center;
+		padding: 2% 2%;
 	}
 }
