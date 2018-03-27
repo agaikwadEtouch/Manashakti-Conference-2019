@@ -393,9 +393,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca250b', end
 	.advisory-committee h2, .advisory-committee h3, .executive-committee h2, .executive-committee h3 {
 		font-weight: bold;
 	}
-	.advisory-committee h2, .executive-committee h2 {
+	.advisory-committee h2, .executive-committee h2, .container h2 {
 		font-size: 24px;
 		text-transform: uppercase;
+		margin-top: 20px;
 	}
 	.advisory-committee h3, .executive-committee h3 {
 		font-size: 18px;
@@ -728,7 +729,7 @@ button.navbar-toggler:focus {
 	width: 800px;
 }
 .advisory-committee, .executive-committee {
-	 margin:  20px auto 50px;
+	 margin:  0 auto 50px;
 	 width: 980px;
 } 
 header .header-left img {
@@ -808,7 +809,9 @@ header .header-left img {
   }
     
 	.navbar {
-		position: static;
+	    position: absolute;
+	    top: 0;
+	    width: 80%;
 	}
 	.navbar-toggler-right {
 	    position: absolute;
@@ -817,8 +820,10 @@ header .header-left img {
 	}
 
 	.custom-toggler.navbar-toggler {
-		background: #fff;
+		background: transparent;
 	    border: none;
+	    position: fixed;
+	    right: 0;
 	}
 	.custom-toggler .navbar-toggler-icon {
 	  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(186,1,0, 0.7)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -864,7 +869,7 @@ header .header-left img {
 	  .program-details {
 		margin: 50px auto 100px;
 	}
-	.advisory-committee, .executive-committee { margin: 20px auto 50px; }
+	.advisory-committee, .executive-committee { margin: 0 auto 50px; }
 	/*cnf info css*/
 	.cnf-info-wrapper{width: 100%;}
 	/*cnf info css*/
