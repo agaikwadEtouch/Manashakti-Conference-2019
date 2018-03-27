@@ -411,6 +411,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca250b', end
 .mobile {
   display: none;
 }
+.hero-section {
+    background: url(../images/abt-venue.png)no-repeat;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 9px;
+    height: 321px;
+    position: relative;
+  }
+  .hero-txt {
+    width: 50%;
+    float: right;
+    position: absolute;
+    bottom: 40px;
+    right: 0;
+    letter-spacing: .15em;
+    text-shadow: 2px 0 0px #515F6A;
+  }
 .about-venue h1 {
 font-size: 26px;
 font-weight: bold;
@@ -974,7 +993,9 @@ header .header-left img {
 /*About the Venue*/
 
 
-
+.hero-txt {
+	width: 100%;
+}
 .means-structure.mobile .diamond {
 	width: 140px;
 height: 140px;
