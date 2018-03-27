@@ -207,6 +207,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca250b', end
 	letter-spacing: 3px;
 	line-height: 127%;
 	font-weight: 600;
+	margin-bottom: 10px;
 }
 .normal-text{ font-weight: normal;}
 .main-ban-title {
@@ -431,7 +432,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca250b', end
     letter-spacing: .15em;
     text-shadow: 2px 0 0px #515F6A;
   }
-.about-venue h1 {
+
+h1 {
 font-size: 26px;
 font-weight: bold;
 color: #555;
@@ -586,17 +588,20 @@ footer {
     font-size: 12px;
     color: #fff;
     text-align: center;
-    padding: 29px 0 19px 0;
+    padding: 20px 0;
 	font-weight: bold;
 }
 ul.ft-link{margin:0 auto;width:832px;}
 ul.ft-link li{float:left;font-size: 16px;margin-right:114px;list-style:none;}
 ul.ft-link li.last{margin-right: 0;}
-.ft-link li a {color: #fff;text-decoration: underline;cursor: pointer;}
+.ft-link li a {color: #fff;cursor: pointer;}
+.ft-link li a:hover {
+	text-decoration: underline;
+}
 .ftr-link-wrapper {
     margin-bottom: 18px;
 }
-footer .copyright {padding-top: 16px;}
+footer .copyright {}
 
 
 
@@ -808,7 +813,7 @@ header .header-left img {
   .date-info {
     display: block;
     text-align: center;
-    color: #000;
+    color: #3E3E3E;
     background: transparent;
   }
   .date-info::after, .date-info::before {
