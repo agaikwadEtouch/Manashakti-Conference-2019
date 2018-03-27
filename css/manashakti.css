@@ -137,8 +137,8 @@ header .container {
 .navbar, .navbar .container-fluid {
 	padding: 0;
 }
-.nav-main-container{margin: 0 auto;width:1024px;}
-.nav-main-container .container{width:100%;padding: 0;}
+.nav-main-container{margin: 0 auto;}
+.nav-main-container .container{width:1024px;padding: 0;}
 .nav-link{display: inline-block;}
 .navbar-collapse {
 background: rgba(146,35,51,1); 121.  background: #832d2c; /* Old browsers */
@@ -780,6 +780,8 @@ header .header-left img {
 	/*cnf info css*/
 	.cnf-info-wrapper{width: 100%;}
 	/*cnf info css*/
+	.nav-main-container .container{width:100%;padding: 0;}
+	.nav-link{display: block;}
 }
 @media (min-width: 768px) and (max-width: 979px){
 	.participate{padding-bottom:97px;}
