@@ -137,8 +137,8 @@ header .container {
 .navbar, .navbar .container-fluid {
 	padding: 0;
 }
-.nav-main-container{margin: 0 auto;width:1024px;}
-.nav-main-container .container{width:100%;padding: 0;}
+.nav-main-container{margin: 0 auto;}
+.nav-main-container .container{width:1024px;padding: 0;}
 .nav-link{display: inline-block;}
 .navbar-collapse {
 background: rgba(146,35,51,1); 121.  background: #832d2c; /* Old browsers */
@@ -447,8 +447,8 @@ margin: 0 auto;
 }
 
 .means-structure .diamond {
-	width: 137px;
-	height: 137px;
+	width: 120px;
+	height: 120px;
 	border-radius: 10px;
 	margin: 10px;
 	position: relative;
@@ -468,21 +468,21 @@ margin: 0 auto;
 
 .means-structure ul li {
 	display: table-cell;
-	width: 200px;
+	width: 178px;
 }
 
 .means-structure span {
 	display: block;
-	text-align: center;
-	top: 67px;
-	position: absolute;
-	width: 140px;
-	z-index: 1;
-	margin-left: 39px;
-	color: #fff;
-	font-weight: bold;
-	font-size: 1em;
-	text-transform: uppercase;
+    text-align: center;
+    top: 60px;
+    position: absolute;
+    width: 124px;
+    z-index: 1;
+    margin-left: 39px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.938em;
+    text-transform: uppercase;
 }
 
 .means-structure span.multi-line-txt {
@@ -490,7 +490,7 @@ margin: 0 auto;
 	margin-left: 38px;
 }
 .means-structure span.two-line-txt {
-	top: 56px;
+	top: 50px;
 	margin-left: 38px;
 }
 
@@ -503,8 +503,8 @@ margin: 0 auto;
 }
 
 .row-01 {
-	left: 100px;
-	top: 58px;
+	left: 89px;
+    top: 53px;
 }
 
 .row-02 {
@@ -512,31 +512,35 @@ margin: 0 auto;
 }
 
 .row-03 {
-	left: 100px;
-	top: -58px;
+	left: 89px;
+    top: -52px;
 }
 
 .row-04 {
 	left: 0;
-	top: -116px;
+	top: -105px;
 }
 
 .means-structure .big-diamond {
-	width: 274px;
-	height: 274px;
-	position: absolute;
-	top: -69px;
-	margin-left: 71px;
-	background: #fff;
-	border: 2px solid #515F6A;
+	width: 244px;
+    height: 244px;
+    position: absolute;
+    top: -63px;
+    margin-left: 65px;
+    background: #fff;
+    border: 2px solid #515F6A;
+}
+.info-section {
+	padding-right: 15px;
+    padding-left: 15px;
 }
 
 .means-structure .big-diamond-txt {
 	color: #000;
-	width: auto;
-	top: 57px;
-	margin-left: 86px;
-	text-transform: none;
+    width: auto;
+    top: 48px;
+    margin-left: 67px;
+    text-transform: none;
 }
 
 .means-structure .big-diamond-txt a {
@@ -864,6 +868,8 @@ header .header-left img {
 	/*cnf info css*/
 	.cnf-info-wrapper{width: 100%;}
 	/*cnf info css*/
+	.nav-main-container .container{width:100%;padding: 0;}
+	.nav-link{display: block;}
 }
 @media (min-width: 768px) and (max-width: 979px){
 	.participate{padding-bottom:97px;}
