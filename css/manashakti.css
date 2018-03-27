@@ -100,7 +100,7 @@ header .container {
 	content: "";
 	border-right: 2px solid #9a9a9a;
 	position: absolute;
-	right: 5px;
+	right: 2px;
     top: 10px;
     height: 85%;
 }
@@ -760,7 +760,6 @@ header .header-left img {
 		top: 38%;
 	  }
   .association-col-1 {
-    min-width: 86px;
     padding-top: 10px;
 	font-size: 62%;
   }
