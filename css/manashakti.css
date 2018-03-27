@@ -1133,9 +1133,23 @@ margin: 0 auto;
 		top: 25%;
 	}
 	.apppah-title {
-		margin-top: 5px;
+	    margin-top: 13px;
+		font-size: 13px;
+		text-align: center;
 	}
 	.association-col-1::after {
 		right: 1px;
+	}
+	.association-col-1 {
+		font-size: 68%;
+	}
+	img[title=Apppah] {
+		margin-top: 15px;
+	}
+	.txt-container {
+		position: static;
+	}
+	.association-col-1 {
+		padding: 0px;
 	}
 }
