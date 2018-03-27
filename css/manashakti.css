@@ -23,8 +23,9 @@ header{
     background: -ms-linear-gradient(top, #fefef2, #f9f4ab, #fec384);
     background: -o-linear-gradient(top, #fefef2, #f9f4ab, #fec384);
 }
-header .container {
+header .container, nav+.container {
  max-width: 1024px;
+	padding: 0;
 }
 /*.header-right {
 	max-width: 440px;
@@ -396,7 +397,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca250b', end
 	}
 	.advisory-committee h2, .executive-committee h2, .container h2 {
 		font-size: 24px;
-		text-transform: uppercase;
 		margin-top: 20px;
 	}
 	.advisory-committee h3, .executive-committee h3 {
